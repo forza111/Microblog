@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/data/*
+/log/*
+/venv/*
+__pycache__/*
+*/__pycache__/*
+/logs/*
+/.idea/*
+*.log
