@@ -65,6 +65,7 @@ class User(UserMixin, db.Model):
             {'reset_password': self.id, 'exp' : time() + expires_in },
             app.config['SERET_KEY'], algorithm='HS256'
         ).decode('utf-8')
+
     @staticmethod
     def verify_reset_password_token(token):
         try:
@@ -73,6 +74,7 @@ class User(UserMixin, db.Model):
         except:
             return
         return User.query.get(id)
+
 
 @login.user_loader
 def load_user(id):
