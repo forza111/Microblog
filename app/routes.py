@@ -1,6 +1,7 @@
 from app import app,db
 from flask import render_template,flash,redirect,url_for,request
-from app.forms import LoginForm,RegistrationForm, EditProfileForm, PostForm, ResetPasswordRequestForm, ResetPasswordForm
+from app.forms import LoginForm,RegistrationForm, EditProfileForm, PostForm, ResetPasswordRequestForm, \
+    ResetPasswordForm, EmptyForm
 from flask_login import current_user, login_user, logout_user,login_required
 from app.models import User, Post
 from werkzeug.urls import url_parse
@@ -80,8 +81,9 @@ def user(username):
         if posts.has_next else None
     prev_url = url_for('user', username=user.username, page=posts.prev_num) \
         if posts.has_prev else None
+    form = EmptyForm()
     return render_template('user.html', user=user, posts=posts.items,
-                           next_url=next_url, prev_url=prev_url)
+                           next_url=next_url, prev_url=prev_url, form=form)
 
 @app.before_request
 def before_request():
