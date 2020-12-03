@@ -11,7 +11,7 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel
 from flask import request
-
+from flask_babel import lazy_gettext as _l
 
 
 
@@ -22,7 +22,7 @@ migrate = Migrate(app, db)
 
 login = LoginManager(app)
 login.login_view = 'login'
-login.login_message = 'Для просмотра данной страницы войдите в свою  учетную запись'
+login.login_message = _l('Please log in to access this page')
 
 mail = Mail(app)
 bootstrap = Bootstrap(app)
@@ -59,7 +59,7 @@ if not app.debug:
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
-
+    #return request.accept_languages.best_match(app.config['LANGUAGES'])
+    return 'es'
 
 from app import routes, models, errors
