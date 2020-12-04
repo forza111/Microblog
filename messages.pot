@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-04 11:13+0300\n"
+"POT-Creation-Date: 2020-12-04 17:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,15 +186,15 @@ msgstr ""
 msgid "New user?"
 msgstr ""
 
-#: app/templates/login.html:12
+#: app/templates/login.html:13
 msgid "Click to Register"
 msgstr ""
 
-#: app/templates/login.html:13
+#: app/templates/login.html:14
 msgid "Forgout Your Password?"
 msgstr ""
 
-#: app/templates/login.html:13
+#: app/templates/login.html:15
 msgid "Click to Reset It"
 msgstr ""
 

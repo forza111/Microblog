@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-04 11:13+0300\n"
+"POT-Creation-Date: 2020-12-04 17:24+0300\n"
 "PO-Revision-Date: 2020-12-03 17:40+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,43 +25,43 @@ msgstr "Для просмотра данной страницы необходи
 
 #: app/email.py:22
 msgid "[Microblog] Reset Your Password"
-msgstr ""
+msgstr "Сбросить пароль"
 
 #: app/forms.py:8 app/forms.py:14 app/forms.py:33
 msgid "Username"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: app/forms.py:9 app/forms.py:16 app/forms.py:63
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: app/forms.py:10
 msgid "Remember Me"
-msgstr ""
+msgstr "Запомнить меня"
 
 #: app/forms.py:11 app/forms.py:19 app/templates/login.html:5
 msgid "Sign In"
-msgstr ""
+msgstr "Войти"
 
 #: app/forms.py:15 app/forms.py:58
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: app/forms.py:17 app/forms.py:64
 msgid "Repeat Password"
-msgstr ""
+msgstr "Повторите пароль"
 
 #: app/forms.py:24
 msgid "Please use a different username"
-msgstr ""
+msgstr "Неверное имя пользователя. Попробуйте еще раз."
 
 #: app/forms.py:29
 msgid "Please use a different email address."
-msgstr ""
+msgstr "Неверный почтовый адрес. Попробуйте еще раз."
 
 #: app/forms.py:34
 msgid "Abbout me"
-msgstr ""
+msgstr "О себе"
 
 #: app/forms.py:35 app/forms.py:50 app/forms.py:54
 msgid "Submit"
@@ -188,15 +188,15 @@ msgstr ""
 msgid "New user?"
 msgstr ""
 
-#: app/templates/login.html:12
+#: app/templates/login.html:13
 msgid "Click to Register"
 msgstr ""
 
-#: app/templates/login.html:13
+#: app/templates/login.html:14
 msgid "Forgout Your Password?"
 msgstr ""
 
-#: app/templates/login.html:13
+#: app/templates/login.html:15
 msgid "Click to Reset It"
 msgstr ""
 
