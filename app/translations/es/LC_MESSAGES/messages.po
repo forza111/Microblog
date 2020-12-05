@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-04 17:24+0300\n"
+"POT-Creation-Date: 2020-12-06 00:56+0300\n"
 "PO-Revision-Date: 2020-12-02 22:01+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -176,11 +176,11 @@ msgstr "Editar Perfil"
 msgid "Hi %(username)s!"
 msgstr "¡Hola, %(username)s!"
 
-#: app/templates/index.html:17
+#: app/templates/index.html:17 app/templates/user.html:43
 msgid "Newer posts"
 msgstr "Artículos siguientes"
 
-#: app/templates/index.html:22
+#: app/templates/index.html:22 app/templates/user.html:48
 msgid "Older posts"
 msgstr "Artículos previos"
 
@@ -211,6 +211,38 @@ msgstr "Nueva Contraseña"
 #: app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Nueva Contraseña"
+
+#: app/templates/user.html:7
+#, fuzzy
+msgid "User"
+msgstr "¿Usuario Nuevo?"
+
+#: app/templates/user.html:12
+msgid "Last seen on"
+msgstr ""
+
+#: app/templates/user.html:14
+#, python-format
+msgid "%(count)d followers"
+msgstr ""
+
+#: app/templates/user.html:15
+#, python-format
+msgid "%(count)d following"
+msgstr ""
+
+#: app/templates/user.html:17
+#, fuzzy
+msgid "Edit your profile"
+msgstr "Editar Perfil"
+
+#: app/templates/user.html:22
+msgid "Follow"
+msgstr ""
+
+#: app/templates/user.html:29
+msgid "Unfollow"
+msgstr ""
 
 #~ msgid "File Not Found"
 #~ msgstr ""
