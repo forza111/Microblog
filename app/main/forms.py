@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, TextAreaField
-from wtforms.validators import DataRequired, ValidationError, Email, EqualTo, Length
+from wtforms import StringField, SubmitField, TextAreaField
+from wtforms.validators import DataRequired, ValidationError, Length
 from app.models import User
 from flask_babel import lazy_gettext as _l
 
@@ -19,6 +19,7 @@ class EditProfileForm(FlaskForm):
             user = User.query.filter_by(username=self.username.data).first()
             if user is not None:
                 raise ValidationError(_l('Please use a different username.'))
+
 
 class PostForm(FlaskForm):
     post = TextAreaField(_l('Say something'), validators=[

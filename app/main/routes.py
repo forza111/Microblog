@@ -1,6 +1,6 @@
 from app import db
 from flask import render_template,flash,redirect,url_for,request,g, current_app
-from app.forms import EditProfileForm, PostForm, EmptyForm
+from app.main.forms import EditProfileForm, PostForm, EmptyForm
 from flask_login import current_user, login_required
 from app.models import User, Post
 from datetime import datetime
