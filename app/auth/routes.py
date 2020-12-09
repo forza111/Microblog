@@ -1,15 +1,13 @@
 from app import db
-from flask import render_template,flash,redirect,url_for,request,g
+from flask import render_template,flash,redirect,url_for,request
 from app.auth.forms import LoginForm,RegistrationForm, ResetPasswordRequestForm,\
     ResetPasswordForm
-from flask_login import current_user, login_user, logout_user,login_required
-from app.models import User, Post
+from flask_login import current_user, login_user, logout_user
+from app.models import User
 from app.auth import bp
 from werkzeug.urls import url_parse
-from datetime import datetime
-from app.email import send_password_reset_email
-from flask_babel import _,get_locale
-from guess_language import guess_language
+from app.auth.email import send_password_reset_email
+from flask_babel import _
 
 
 @bp.route('/login', methods=['GET', 'POST'])
